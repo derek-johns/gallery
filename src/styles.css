@@ -1,0 +1,15 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #efefef;	
+}
+.main-content {
+	padding-top: 60px;
+	color: black;
+}
+.copy {
+	background-color: #f3f3f3;
+	font-family: 'Montserrat', sans-serif;
+	padding: 5px; 
+	border-top: 1px solid black;
+	margin-top: 50px;
+}

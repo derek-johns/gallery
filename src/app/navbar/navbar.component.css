@@ -1,0 +1,12 @@
+nav{
+	background-color: #f3f3f3;
+	font-family: 'Montserrat', sans-serif;
+}
+.logo{
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+}
+.logo:hover{
+	color: #cc1e39;
+}

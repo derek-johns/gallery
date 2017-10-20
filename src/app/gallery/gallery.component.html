@@ -1,0 +1,20 @@
+<div class='container col-md-12'>
+	<div class='row col-md-12 sort'>
+		<h4>Filter using tabs below.</h4>
+		<h4>Click on thumbnail to view Image and Details.</h4>
+		<button class='btn btn-lg btn-info' [class.active]="filterBy=='all'" (click)="filterBy='all'">All</button>
+		<button class='btn btn-lg btn-info' [class.active]="filterBy=='Nike'" (click)="filterBy='Nike'">Nike</button>
+		<button class='btn btn-lg btn-info' [class.active]="filterBy=='Jordan'" (click)="filterBy='Jordan'">Jordan</button>
+		<button class='btn btn-lg btn-info' [class.active]="filterBy=='Adidas'" (click)="filterBy='Adidas'">Adidas</button>
+		<button class='btn btn-lg btn-info' [class.active]="filterBy=='Under-Armour'" (click)="filterBy='Under-Armour'">Under Armour</button>
+	</div>
+	<div class='row thumbs'>
+		<ul id='thumbnailsList'>
+			<li *ngFor='let image of (visibleImages | imageFilter:filterBy)'>
+				<a [routerLink]="['/image', image.id]">
+					<img src='{{image.url}}' class='tn' width='300' height="300">
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
